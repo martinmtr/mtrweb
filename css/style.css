@@ -230,8 +230,14 @@ input {
 }
 
 @media screen and (max-width:1200px) {
-        .certificado img {
+        .certificado {
                 flex-direction: column;
+        }
+
+        .certificado img {
+                width: auto;
+                height: auto;
+                padding: 40px;
         }
 
         .nst {
@@ -254,13 +260,16 @@ input {
 @media screen and (max-width:1055px) {
         .conteiner {
                 width: auto;
-                height: auto;}
+                height: auto;
+        }
 
         main {
-                height: 130vh;}
+                height: 130vh;
+        }
 
         p {
-                font-size: 12px;}
+                font-size: 12px;
+        }
 }
 
 @media screen and (max-width:875px) {
@@ -317,7 +326,7 @@ input {
         }
 
         .certificado {
-                margin: 10px
+               padding: 20px;
         }
 
         h1 {
@@ -325,7 +334,7 @@ input {
         }
 
         h2 {
-                font-size: 12px;
+                font-size: 18px;
         }
 
         form {
@@ -333,18 +342,19 @@ input {
                 height: 450px;
 
         }
+}
+
+@media screen and (max-width: 465px) {
+
+        .galeria {
+                display: grid;
+                grid-template-columns: repeat(2, 150px);
+                grid-template-rows: repeat(6, 150px);
         }
 
-        @media screen and (max-width: 465px) {
-
-                .galeria {
-                        display: grid;
-                        grid-template-columns: repeat(2, 150px);
-                        grid-template-rows: repeat(6, 150px);
-                }
-
-                .galeria :hover {
-                        width: 220px;
-                        height: 220px;
-                }
+        .galeria :hover {
+                width: 220px;
+                height: 220px;
         }
+        h2{font-size: 15px;}
+}
