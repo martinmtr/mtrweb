@@ -77,7 +77,7 @@ main {
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        height: 120vh;
+        height: 160vh;
 }
 
 
@@ -108,20 +108,34 @@ main {
         filter: contrast(120%);
 }
 
+.maps-logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        margin-top: 30px;
+        border-top: solid white;
+}
+
 /**FOOTER**/
 
 footer {
         background-color: rgb(38, 38, 38);
         padding: 15px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+}
+
+.copy {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
 }
 
 /**SERVICIOS**/
 .trabajos {
         background-image: url(../img/repe.jpg);
-        height: 350vh;
+        height: 380vh;
 }
 
 h1 {
@@ -141,7 +155,7 @@ h2 {
 .galeria {
         display: grid;
         grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(3, 350px);
+        grid-template-rows: repeat(4, 350px);
         gap: 15px;
         justify-content: center;
 
@@ -161,7 +175,8 @@ h2 {
 .item h3 {
         position: absolute;
         bottom: 0;
-        font: 1em sans-serif;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
         color: beige;
         background-color: rgba(0, 0, 0, 0.411);
         width: 100%;
@@ -174,18 +189,35 @@ h2 {
         border: solid rgba(112, 112, 112, 0.459);
 }
 
-.carousel-inner {
-        width: 800px;
-        ;
+.carousel-inner img {
+        object-fit: scale-down;
 }
 
+.carousel-control-prev-icon {
+        background-color: rgb(255, 127, 39) !important;
+}
+
+.carousel-control-next-icon {
+        background-color: rgb(255, 127, 39) !important;
+}
+
+/**RESERVAS**/
+.politica {color: white;
+font-size: 20px;
+text-align: center;}
+.reserva{list-style:circle white;
+text-align: center;
+background-color: black;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-style:italic;
+}
 /**FORMULARIOS**/
 
 form {
         width: 400px;
         height: 650px;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 80px;
         color: aliceblue;
         border: 3px solid #fafafa10;
         border-radius: 1rem;
@@ -217,10 +249,17 @@ input {
         -webkit-backdrop-filter: blur(0.4rem);
 }
 
-.turnos {
+.ubi {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        padding-top: 30px;
 }
+
+.turnos {
+     flex-direction: column;
+}
+.formulario{display: flex;
+justify-content: center;}
 
 /**NOSOTROS**/
 .certificado {
@@ -228,6 +267,9 @@ input {
         justify-content: space-around;
         padding-top: 20px;
 }
+
+
+/**MEDIA-QUERIES**/
 
 @media screen and (max-width:1200px) {
         .certificado {
@@ -255,6 +297,15 @@ input {
                 height: 100%;
                 object-fit: cover;
         }
+
+        .maps-logo {
+                width: auto;
+                height: auto;
+        }
+
+        .init {
+                height: 150vh;
+        }
 }
 
 @media screen and (max-width:1055px) {
@@ -269,6 +320,17 @@ input {
 
         p {
                 font-size: 12px;
+        }
+
+        form {
+                width: 320px;
+                height: 500px;
+                padding: 10px;
+                margin: 10px;
+        }
+
+        .trabajos {
+                height: 340vh;
         }
 }
 
@@ -309,6 +371,26 @@ input {
         .contacto {
                 font-size: 18px;
         }
+
+        .copy {
+                font-size: 7px;
+        }
+
+        .maps-logo iframe {
+                width: auto;
+                height: 200px;
+        }
+
+        .maps-logo img {
+                height: 120px;
+        }
+        .reserva{font-size: 15px;}
+}
+
+@media screen and (max-width:769px) {
+        .d-none {
+                display: block !important;
+        }
 }
 
 @media screen and (max-width:581px) {
@@ -326,7 +408,7 @@ input {
         }
 
         .certificado {
-               padding: 20px;
+                padding: 10px;
         }
 
         h1 {
@@ -339,9 +421,36 @@ input {
 
         form {
                 width: 280px;
-                height: 450px;
+                height: 470px;
 
         }
+
+        label {
+                font-size: 12px;
+        }
+        input {
+        
+        padding: 7px;
+}
+
+
+        .maps-logo iframe {
+                width: 170px;
+                height: 150px;
+        }
+
+        .maps-logo img {
+                height: 100px;
+        }
+
+        .init {
+                height: 130vh;
+        }
+
+        .trabajos {
+                height: 330vh;
+        }
+        .reserva{font-size: 11px;}
 }
 
 @media screen and (max-width: 465px) {
@@ -356,5 +465,29 @@ input {
                 width: 220px;
                 height: 220px;
         }
-        h2{font-size: 15px;}
+
+        h2 {
+                font-size: 15px;
+        }
+
+        .copy {
+                font-size: 5px;
+        }
+
+        .maps-logo iframe {
+                width: 150px;
+                height: 130px;
+        }
+
+        .maps-logo img {
+                height: 80px;
+        }
+
+        .init {
+                height: 130vh;
+        }
+
+        .trabajos {
+                height: 300vh;
+        }
 }

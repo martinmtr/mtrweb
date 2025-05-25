@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <title>Turnos</title>
 </head>
-<body >
-   <header>
-      <img class="logo" src="../img/logo..jpg" alt="" >
+
+<body>
+    <header>
+        <img class="logo" src="../img/logo..jpg" alt="">
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -23,8 +25,18 @@
             </ul>
         </nav>
     </header>
-    <main class="turnos" >
-        <form action= "/submit"  method="post">
+    <main class="turnos">
+<div class="politica">
+        <h1>Politicas de reservas</h1>
+        <li class="reserva">Reserva con seña del 20% del valor del servicio, mediante transferencia o efectivo.</li>
+        <li class="reserva">Los turnos pueden ser reprogramados con un mínimo de 24 horas de antelación.</li>
+        <li class="reserva">Los turnos reprogramados pueden estar sujetos a disponibilidad.</li>
+        <li class="reserva">Recordatorio:los clientes serán notificados mediante whatsapp 24 horas antes del turno.</li>
+        <li class="reserva">La seña NO reembolsable aplica para "Tratamientos y limpiezas".</li>
+        <li class="reserva">Tolerancia de espera de 1 hora.</li>
+    </div>
+    <article class="formulario">
+        <form action="/submit" method="post">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
             <label for="apellido">Apellido</label>
@@ -54,21 +66,26 @@
                 <option value="">Toyota</option>
             </select>
             <label for="">Modelo</label>
-             <input type="datetime" name="" id="">
+            <input type="datetime" name="" id="">
             <label for="">Fecha de turno</label>
-             <input type="date" name="" id="">
+            <input type="date" name="" id="">
             <input type="submit" enviar></select>
         </form>
+       </article>
     </main>
     <footer>
-        <a href="https://wa.me/message/V4VPYFXANXGID1"> 
-            <img src="../img/whatsapp.png" alt="" width ="30px"></a>
-        <a href="https://www.instagram.com/mtr.premiumdetail/">
-            <img src="../img/logotipo-de-instagram.png" alt=""height= "30px"  ></a>
-        <a href="https://www.facebook.com/mtr.premiumdetail/">
-            <img src="../img/facebook.png" alt="" height="30px" ></a>
+        <h2 class="copy">&copy; 2025 MTR Premium Detail. Todos los derechos reservados.</h2>
+        <div class="redes">
+            <a href="https://wa.me/message/V4VPYFXANXGID1">
+                <img src="../img/whatsapp.png" alt="" width="30px"></a>
+            <a href="https://www.instagram.com/mtr.premiumdetail/">
+                <img src="../img/logotipo-de-instagram.png" alt="" height="30px"></a>
+            <a href="https://www.facebook.com/mtr.premiumdetail/">
+                <img src="../img/facebook.png" alt="" height="30px"></a>
+        </div>
     </footer>
 
-    
-  </body>
+
+</body>
+
 </html>
