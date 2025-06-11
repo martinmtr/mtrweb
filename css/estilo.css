@@ -1,0 +1,607 @@
+@charset "UTF-8";
+/**colores**/
+/**Tamaño de fuentes**/
+/**Mixin**/
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+header {
+  background-color: rgb(255, 127, 39);
+}
+
+.logo {
+  width: 110px;
+  height: 40px;
+  padding-top: 10px;
+  margin: 5px;
+}
+
+.container-fluid ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+.container-fluid ul li a:hover {
+  color: white;
+}
+
+footer {
+  background-color: #504e4e;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copy {
+  font-size: 10px;
+  color: white;
+}
+
+* {
+  /*RESET*/
+  margin: 0;
+  padding: 0;
+}
+
+.init {
+  background-image: url(../img/tablero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 240vh;
+}
+.init .parrafo {
+  padding-top: 50px;
+}
+.init .parrafo h1 {
+  color: white;
+  font-size: 65px;
+  text-align: center;
+}
+.init .parrafo p {
+  font-size: 18px;
+  padding: 25px;
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  border: 3px solid #504e4e;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.9rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+}
+.init .conteiner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  margin: 0;
+  max-width: 100%;
+  height: 500px;
+}
+.init .conteiner img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: 0.5s ease;
+  border-top: solid 9px white;
+  border-bottom: solid 9px white;
+}
+.init .conteiner img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.init .boton {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 60px;
+}
+.init .boton .boton1 {
+  background-color: rgb(255, 127, 39);
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border: solid 2px white;
+  font-size: 20px;
+}
+.init .boton .boton1:hover {
+  cursor: crosshair;
+  color: white;
+}
+.init .boton .boton2 {
+  background-color: rgb(255, 127, 39);
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border: solid 2px white;
+  font-size: 20px;
+}
+.init .boton .boton2:hover {
+  cursor: crosshair;
+  color: white;
+}
+.init section {
+  padding-top: 30px;
+}
+.init section h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  border: 3px solid #504e4e;
+  border-radius: 1rem;
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(0.1rem);
+}
+.init section .reseñas {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-top: 20px;
+}
+.init section .reseñas img {
+  border-radius: 20px;
+  border: solid rgb(255, 127, 39);
+}
+.init .maps-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin-top: 50px;
+  border-top: solid white;
+}
+
+/**Servicios**/
+.trabajos {
+  background-image: url(../img/fondo\ azul.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.trabajos .hero h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+.trabajos .hero h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.trabajos .hero p {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  border: 3px solid #504e4e;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.9rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+}
+.trabajos .grid-galery {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 400px);
+  gap: 25px;
+  justify-content: center;
+}
+.trabajos .grid-galery .item {
+  position: relative;
+}
+.trabajos .grid-galery .item h3 {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+.trabajos .grid-galery .item img {
+  width: 100%;
+  height: 100%;
+  border: solid #504e4e;
+}
+.trabajos .grid-galery .item .duster {
+  object-fit: cover;
+}
+.trabajos .grid-galery .item .vento {
+  object-fit: cover;
+}
+.trabajos .limpieza h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.trabajos .limpieza p {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  border: 3px solid #504e4e;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.9rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+}
+.trabajos .carousel {
+  padding-bottom: 20px;
+}
+.trabajos .carousel-inner img {
+  object-fit: scale-down;
+}
+.trabajos .carousel-control-prev-icon {
+  background-color: rgb(255, 127, 39) !important;
+}
+.trabajos .carousel-control-next-icon {
+  background-color: rgb(255, 127, 39) !important;
+}
+
+/***Nosotros***/
+.nst {
+  background-image: url(../img/fondo\ azul.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+}
+.nst .nosotros h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.nst .nosotros p {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  border: 3px solid #504e4e;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.9rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+}
+.nst .certificado {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-top: 20px;
+}
+
+/**Turnos y contactos**/
+.politica {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.turnos {
+  background-image: url(../img/repe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  height: 170vh;
+}
+
+.reserva {
+  list-style: circle white;
+  text-align: center;
+  background-color: black;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-style: italic;
+}
+
+.ctc {
+  background-image: url(../img/repe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200vh;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  background: #504e4e;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 10px 10px 5px 0px rgba(34, 34, 34, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(39, 38, 38, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(27, 27, 27, 0.75);
+}
+
+label {
+  position: relative;
+  color: white;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+.contacto h1 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.ubi {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 30px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 1200px) {
+  /**INDEX**/
+  .init {
+    height: 290vh;
+  }
+  .init .conteiner {
+    width: auto;
+    height: auto;
+  }
+  .init .conteiner .bora {
+    display: none;
+  }
+  .init .conteiner .lx {
+    display: none;
+  }
+  .init .reseñas img {
+    width: 220px;
+    height: 300px;
+  }
+  /**SERVICIOS**/
+  .trabajos .grid-galery {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+  }
+  /**NOSOTROS**/
+  .nst {
+    height: auto;
+  }
+  .nst .certificado {
+    flex-direction: column;
+  }
+  .nst .certificado img {
+    width: auto;
+    height: auto;
+    padding: 50px;
+  }
+  /**CONTACTO**/
+  .ctc .contacto h1 {
+    font-size: 25px;
+  }
+  .ctc .contacto .formulario form {
+    max-width: 300px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .ctc .contacto .formulario label {
+    position: relative;
+    font-size: 12px;
+  }
+  .ctc .contacto .formulario select {
+    font-size: 12px;
+  }
+  .ctc .contacto .formulario input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .trabajos .hero h1 {
+    font-size: 30px;
+  }
+  .trabajos .hero h2 {
+    font-size: 25px;
+  }
+  .trabajos .hero p {
+    font-size: 15px;
+  }
+  .trabajos .grid-galery {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 15px;
+  }
+  .trabajos .limpieza h2 {
+    font-size: 25px;
+  }
+  .trabajos .limpieza p {
+    font-size: 15px;
+  }
+  .trabajos .carousel img {
+    height: 400px;
+  }
+  /**TURNOS**/
+  .turnos .politica h1 {
+    font-size: 25px;
+  }
+  .turnos .politica .reserva {
+    font-size: 18px;
+  }
+  .turnos .formulario form {
+    max-width: 300px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .turnos .formulario label {
+    position: relative;
+    font-size: 12px;
+  }
+  .turnos .formulario select {
+    font-size: 12px;
+  }
+  .turnos .formulario input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /**INDEX**/
+  .init {
+    height: 250vh;
+  }
+  .init .parrafo h1 {
+    font-size: 50px;
+  }
+  .init .parrafo p {
+    font-size: 15px;
+  }
+  .init .boton .boton1 {
+    font-size: 15px;
+  }
+  .init .boton .boton2 {
+    font-size: 15px;
+  }
+  .init section h2 {
+    font-size: 25px;
+  }
+  .init section .reseñas img {
+    width: 100%;
+    height: 200px;
+  }
+  .maps-logo iframe {
+    height: auto;
+  }
+  .maps-logo img {
+    height: 90px;
+  }
+  /**NOSOTROS**/
+  .nst .nosotros h2 {
+    font-size: 25px;
+  }
+  .nst .nosotros p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /**INDEX**/
+  .init .parrafo h1 {
+    font-size: 40px;
+  }
+  .init .boton .boton1 {
+    font-size: 12px;
+  }
+  .init .boton .boton2 {
+    font-size: 12px;
+  }
+  .maps-logo iframe {
+    width: 200px;
+  }
+  footer .copy {
+    font-size: 8px;
+  }
+  footer .redes img {
+    height: 20px;
+  }
+  /**SERVICIOS**/
+  .trabajos .hero h1 {
+    font-size: 30px;
+  }
+  .trabajos .hero h2 {
+    font-size: 25px;
+  }
+  .trabajos .hero p {
+    font-size: 12px;
+  }
+  .trabajos .grid-galery {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+  }
+  .trabajos .grid-galery .item h3 {
+    font-size: 15px;
+  }
+  .trabajos .limpieza h1 {
+    font-size: 30px;
+  }
+  .trabajos .limpieza h2 {
+    font-size: 25px;
+  }
+  .trabajos .limpieza p {
+    font-size: 12px;
+  }
+  /**NOSOTROS**/
+  .nst .nosotros h2 {
+    font-size: 20px;
+  }
+  .nst .nosotros p {
+    font-size: 12px;
+  }
+  /**TURNOS **/
+  .turnos {
+    height: 150vh;
+  }
+  .turnos .politica h1 {
+    font-size: 20px;
+  }
+  .turnos .politica .reserva {
+    font-size: 12px;
+  }
+  /**CONTACTOS**/
+  .ctc .contacto h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /**INDEX**/
+  .init {
+    height: 230vh;
+  }
+  .init .parrafo h1 {
+    font-size: 30px;
+  }
+  .init .parrafo p {
+    font-size: 10px;
+  }
+  .init section h2 {
+    font-size: 20px;
+  }
+  .init section .boton .boton1 {
+    font-size: 12px;
+  }
+  .init section .boton .boton2 {
+    font-size: 12px;
+  }
+  .maps-logo iframe {
+    width: 180px;
+  }
+  .maps-logo img {
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

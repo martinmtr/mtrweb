@@ -1,0 +1,32 @@
+/***Nosotros***/
+.nst {
+    background-image: url(../img/fondo\ azul.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+
+    .nosotros {
+        h2 {
+            font-size: nth($font-size , 8);
+            text-align: center;
+            color: $color-secundario;
+        }
+
+        p {
+            font-size: nth($font-size , 5);
+            text-align: center;
+            color: $color-secundario;
+            font-family: "Special Gothic Expanded One", sans-serif;
+            border: 3px solid $color-cuarto;
+            border-radius: 1rem;
+            backdrop-filter: blur(0.9rem);
+            -webkit-backdrop-filter: blur(0.4rem);
+        }
+    }
+
+    .certificado {
+        @include flex(flex, space-around, stretch);
+        padding-top: 20px;
+    }
+}

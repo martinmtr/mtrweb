@@ -1,0 +1,416 @@
+@media screen and (max-width: 1200px) {
+
+        /**INDEX**/
+        .init {
+                height: 290vh;
+
+                .conteiner {
+                        width: auto;
+                        height: auto;
+
+                }
+
+                .conteiner .bora {
+                        display: none;
+                }
+
+                .conteiner .lx {
+                        display: none;
+                }
+
+                .reseñas {
+                        img {
+                                width: 220px;
+                                height: 300px;
+                        }
+                }
+
+        }
+
+        /**SERVICIOS**/
+        .trabajos {
+                .grid-galery {
+                        grid-template-columns: repeat(2, 300px);
+                        grid-template-rows: repeat(3, 300px);
+                        gap: 20px;
+                }
+        }
+
+        /**NOSOTROS**/
+        .nst {
+                height: auto;
+
+                .certificado {
+                        flex-direction: column;
+                }
+
+                .certificado img {
+                        width: auto;
+                        height: auto;
+                        padding: 50px;
+                }
+
+
+
+        }
+
+        /**CONTACTO**/
+        .ctc {
+                .contacto {
+                        h1 {
+                                font-size: nth($font-size, 7);
+                        }
+
+                        .formulario {
+                                form {
+                                        max-width: 300px;
+                                        padding: 15px;
+                                        margin-top: 20px;
+                                        border-radius: 20px;
+                                        position: relative;
+                                }
+
+                                label {
+                                        position: relative;
+                                        font-size: nth($font-size, 3);
+                                }
+
+                                select {
+                                        font-size: nth($font-size, 3);
+
+                                }
+
+                                input {
+                                        width: 100%;
+                                        outline: none;
+                                        border: none;
+                                        border-radius: 12px;
+                                        font-size: nth($font-size, 3);
+                                }
+                        }
+                }
+        }
+}
+
+@media screen and (max-width: 1000px) {
+        .trabajos {
+                .hero {
+                        h1 {
+                                font-size: nth($font-size, 8);
+
+                        }
+
+                        h2 {
+                                font-size: nth($font-size, 7);
+
+                        }
+
+                        p {
+                                font-size: nth($font-size, 4);
+                        }
+                }
+
+                .grid-galery {
+                        grid-template-columns: repeat(2, 200px);
+                        grid-template-rows: repeat(3, 200px);
+                        gap: 15px;
+                }
+
+                .limpieza {
+                        h2 {
+                                font-size: nth($font-size, 7);
+
+                        }
+
+                        p {
+                                font-size: nth($font-size , 4);
+                        }
+                }
+
+                .carousel {
+                        img {
+                                height: 400px;
+                        }
+                }
+        }
+
+        /**TURNOS**/
+        .turnos {
+                .politica {
+                        h1 {
+                                font-size: nth($font-size, 7);
+                        }
+
+                        .reserva {
+                                font-size: nth($font-size, 5);
+                        }
+                }
+
+                .formulario {
+                        form {
+                                max-width: 300px;
+                                padding: 15px;
+                                margin-top: 20px;
+                                border-radius: 20px;
+                                position: relative;
+                        }
+
+                        label {
+                                position: relative;
+                                font-size: nth($font-size, 3);
+                        }
+
+                        select {
+                                font-size: nth($font-size, 3);
+
+                        }
+
+                        input {
+                                width: 100%;
+                                outline: none;
+                                border: none;
+                                border-radius: 12px;
+                                font-size: nth($font-size, 3);
+                        }
+                }
+        }
+}
+
+@media screen and (max-width: 700px) {
+
+        /**INDEX**/
+        .init {
+                height: 250vh;
+
+                .parrafo {
+                        h1 {
+                                font-size: nth($font-size , 9);
+                        }
+
+                        p {
+                                font-size: nth($font-size, 4);
+                        }
+                }
+
+                .boton {
+                        .boton1 {
+                                font-size: nth($font-size, 4);
+                        }
+
+                        .boton2 {
+                                font-size: nth($font-size, 4);
+                        }
+                }
+
+                section {
+                        h2 {
+                                font-size: nth($font-size, 7);
+                        }
+
+                        .reseñas {
+                                img {
+                                        width: 100%;
+                                        height: 200px;
+                                }
+                        }
+                }
+        }
+
+        .maps-logo {
+                iframe {
+                        height: auto;
+                }
+
+                img {
+                        height: 90px;
+                }
+        }
+
+        /**NOSOTROS**/
+        .nst {
+                .nosotros {
+                        h2 {
+                                font-size: nth($font-size, 7);
+                        }
+
+                        p {
+                                font-size: nth($font-size, 4);
+                        }
+                }
+        }
+
+}
+
+@media screen and (max-width: 500px) {
+
+        /**INDEX**/
+        .init {
+                .parrafo {
+                        h1 {
+                                font-size: nth($font-size, 11);
+                        }
+                }
+
+                .boton {
+                        .boton1 {
+                                font-size: nth($font-size, 3);
+                        }
+
+                        .boton2 {
+                                font-size: nth($font-size, 3);
+                        }
+                }
+        }
+
+
+
+        .maps-logo {
+                iframe {
+                        width: 200px;
+                }
+        }
+
+
+        footer {
+                .copy {
+                        font-size: 8px;
+
+                }
+
+                .redes {
+                        img {
+                                height: 20px;
+                        }
+                }
+        }
+
+        /**SERVICIOS**/
+
+        .trabajos {
+                .hero {
+                        h1 {
+                                font-size: nth($font-size, 8);
+                        }
+
+                        h2 {
+                                font-size: nth($font-size, 7);
+                        }
+
+                        p {
+                                font-size: nth($font-size, 3);
+                        }
+                }
+
+                .grid-galery {
+                        grid-template-columns: repeat(2, 150px);
+                        grid-template-rows: repeat(3, 150px);
+                        gap: 10px;
+
+                        .item {
+                                h3 {
+                                        font-size: nth($font-size, 4);
+                                }
+                        }
+                }
+
+                .limpieza {
+                        h1 {
+                                font-size: nth($font-size, 8);
+                        }
+
+                        h2 {
+                                font-size: nth($font-size, 7);
+                        }
+
+                        p {
+                                font-size: nth($font-size, 3);
+                        }
+                }
+        }
+
+        /**NOSOTROS**/
+        .nst {
+                .nosotros {
+                        h2 {
+                                font-size: nth($font-size, 6);
+                        }
+
+                        p {
+                                font-size: nth($font-size, 3);
+                        }
+                }
+        }
+
+        /**TURNOS **/
+
+        .turnos {
+                height: 150vh;
+
+                .politica {
+                        h1 {
+                                font-size: nth($font-size, 6);
+                        }
+
+                        .reserva {
+                                font-size: nth($font-size, 3);
+                        }
+                }
+        }
+
+        /**CONTACTOS**/
+        .ctc {
+                .contacto {
+                        h1 {
+                                font-size: nth($font-size, 6);
+                        }
+                }
+        }
+
+}
+
+@media screen and (max-width: 400px) {
+
+        /**INDEX**/
+        .init {
+                height: 230vh;
+
+                .parrafo {
+                        h1 {
+                                font-size: nth($font-size, 8);
+                        }
+
+                        p {
+                                font-size: nth($font-size, 2);
+                        }
+                }
+
+                section {
+                        h2 {
+                                font-size: nth($font-size, 6);
+                        }
+
+                        .boton {
+                                .boton1 {
+                                        font-size: nth($font-size, 3);
+                                }
+
+                                .boton2 {
+                                        font-size: nth($font-size, 3);
+                                }
+                        }
+                }
+        }
+
+        .maps-logo {
+                iframe {
+                        width: 180px;
+                }
+
+                img {
+                        height: 60px;
+                }
+        }
+
+
+
+}

@@ -4,8 +4,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/estilo.css">
 
-   <link rel="stylesheet" href="../css/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
@@ -16,29 +18,50 @@
 
 <body>
    <header>
-      <img class="logo" src="../img/logo..jpg" alt="">
-      <nav>
-         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="turnos.html">Turnos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-         </ul>
+      <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <img src="../img/logo..jpg" alt="" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="turnos.html">Turnos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
       </nav>
    </header>
    <main class="nst"> <!--Capacitaciones-->
-      <h2>Sobre nosotros </h2>
-      <p>MTR Premium Detail fue creado en 2015, capacitandonos con las empresas más destacadas, como Vonixx de origen
-         Brasil y Sonax de origen Alemán.
-         Durante todos estos años nos fuimos equipando con herramientas de primera calidad para brindar un mejor
-         servicio. Utilizamos productos de alta tecnologia para que nuestros trabajos sean destacados y lograr de que
-         tengas un experiencia satisfactoria en MTR Premium Detail.
-         Estamos ubicados en el barrio de Loma hermosa, Partido de San Martín. </p>
-      <div class="certificado">
+      <section class="nosotros">
+         <h2>Sobre nosotros </h2>
+         <p>MTR Premium Detail fue creado en 2015, capacitandonos con las empresas más destacadas, como Vonixx de origen
+            Brasil y Sonax de origen Alemán.
+            Durante todos estos años nos fuimos equipando con herramientas de primera calidad para brindar un mejor
+            servicio. Utilizamos productos de alta tecnologia para que nuestros trabajos sean destacados y lograr de que
+            tengas un experiencia satisfactoria en MTR Premium Detail.
+            Estamos ubicados en el barrio de Loma hermosa, Partido de San Martín. </p>
+      </section>
+      <section class="certificado">
          <img src="../img/vonixx.jpg" alt="" height="400px">
          <img src="../img/certificado sonax.jfif" alt="" height="400px">
-      </div>
+      </section>
    </main>
    <footer> <!--Pie de pagina-->
       <h2 class="copy">&copy; 2025 MTR Premium Detail. Todos los derechos reservados.</h2>
@@ -51,7 +74,9 @@
             <img src="../img/facebook.png" alt="" height="30px"></a>
       </div>
    </footer>
-
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

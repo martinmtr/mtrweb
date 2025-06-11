@@ -1,11 +1,11 @@
 * {
-        margin: 0;
         /*RESET*/
+        margin: 0;
         padding: 0;
 }
 
 body {
-        background-color: rgb(240, 234, 234);
+        background-color: rgb(252, 252, 252);
 }
 
 /*ENCABEZADO*/
@@ -18,20 +18,20 @@ header {
 .logo {
         width: 110px;
         height: 40px;
-        padding-top: 15px;
-        margin: 10px;
+        padding-top: 10px;
+        margin: 5px;
 
 }
 
 /*NAVEGADOR*/
-ul {
+.navbar-nav {
         display: flex;
         padding: 10px;
         align-items: end;
 
 }
 
-ul :hover {
+.navbar-nav :hover {
         color: white
 }
 
@@ -53,7 +53,7 @@ ul li a {
 /*BODY*/
 
 .parrafo {
-        padding-top: 70px;
+        padding-top: 50px;
 }
 
 P {
@@ -69,6 +69,10 @@ P {
         -webkit-backdrop-filter: blur(0.4rem);
 }
 
+h1 {
+        color: white;
+}
+
 /**FONDO MAIN**/
 
 main {
@@ -77,7 +81,7 @@ main {
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        height: 160vh;
+        height: 260vh;
 }
 
 
@@ -108,12 +112,65 @@ main {
         filter: contrast(120%);
 }
 
+.boton {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+}
+
+.boton1 {
+        background-color: rgb(255, 127, 39);
+        border-radius: 10px;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        border: solid 2px white;
+        font-size: 20px;
+}
+
+.boton2 {
+        background-color: rgb(255, 127, 39);
+        border-radius: 10px;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        border: solid 2px white;
+        font-size: 20px;
+}
+
+section {
+        padding-top: 30px;
+}
+
+section h2 {
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        border: solid 3px gray;
+        border-radius: 1rem;
+        backdrop-filter: blur(1.5rem);
+        -webkit-backdrop-filter: blur(0.1rem);
+}
+
+.reseñas {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+}
+
+.reseñas img {
+        border-radius: 20px;
+        border: solid rgb(255, 127, 39);
+        margin-bottom: 20px;
+}
+
 .maps-logo {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
         background-color: black;
-        margin-top: 30px;
+        padding-top: 30px;
         border-top: solid white;
 }
 
@@ -135,7 +192,7 @@ footer {
 /**SERVICIOS**/
 .trabajos {
         background-image: url(../img/repe.jpg);
-        height: 380vh;
+        height: 360vh;
 }
 
 h1 {
@@ -152,16 +209,16 @@ h2 {
 }
 
 
-.galeria {
+.grid-galery {
         display: grid;
-        grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(4, 350px);
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(3, 350px);
         gap: 15px;
         justify-content: center;
 
 }
 
-.galeria :hover {
+.grid-galery :hover {
         cursor: crosshair;
         width: 500px;
         height: 500px;
@@ -183,7 +240,7 @@ h2 {
         text-align: center;
 }
 
-.galeria div img {
+.grid-galery div img {
         width: 100%;
         height: 100%;
         border: solid rgba(112, 112, 112, 0.459);
@@ -191,6 +248,7 @@ h2 {
 
 .carousel-inner img {
         object-fit: scale-down;
+
 }
 
 .carousel-control-prev-icon {
@@ -202,15 +260,20 @@ h2 {
 }
 
 /**RESERVAS**/
-.politica {color: white;
-font-size: 20px;
-text-align: center;}
-.reserva{list-style:circle white;
-text-align: center;
-background-color: black;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-style:italic;
+.politica {
+        color: white;
+        font-size: 20px;
+        text-align: center;
 }
+
+.reserva {
+        list-style: circle white;
+        text-align: center;
+        background-color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: italic;
+}
+
 /**FORMULARIOS**/
 
 form {
@@ -243,10 +306,7 @@ input {
         font-size: 25px;
         color: white;
         text-align: center;
-        border: 3px solid #fafafa10;
-        border-radius: 1rem;
-        backdrop-filter: blur(0.9rem);
-        -webkit-backdrop-filter: blur(0.4rem);
+
 }
 
 .ubi {
@@ -256,10 +316,13 @@ input {
 }
 
 .turnos {
-     flex-direction: column;
+        flex-direction: column;
 }
-.formulario{display: flex;
-justify-content: center;}
+
+.formulario {
+        display: flex;
+        justify-content: center;
+}
 
 /**NOSOTROS**/
 .certificado {
@@ -272,30 +335,10 @@ justify-content: center;}
 /**MEDIA-QUERIES**/
 
 @media screen and (max-width:1200px) {
-        .certificado {
-                flex-direction: column;
-        }
 
-        .certificado img {
-                width: auto;
-                height: auto;
-                padding: 40px;
-        }
-
-        .nst {
-                height: 150vh;
-        }
-
-        .galeria {
-                display: grid;
-                grid-template-columns: repeat(2, 300px);
-                grid-template-rows: repeat(6, 200px);
-        }
-
-        .galeria div img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+        /**INDEX**/
+        .init {
+                height: 300vh;
         }
 
         .maps-logo {
@@ -303,42 +346,98 @@ justify-content: center;}
                 height: auto;
         }
 
-        .init {
-                height: 150vh;
-        }
-}
-
-@media screen and (max-width:1055px) {
         .conteiner {
                 width: auto;
                 height: auto;
         }
 
-        main {
-                height: 130vh;
+        .reseñas img {
+                width: 270px;
+                height: 320px;
         }
 
+        /**SERVICIOS**/
+        .trabajos {
+                height: 380vh;
+        }
+
+        .grid-galery {
+                display: grid;
+                grid-template-columns: repeat(2, 300px);
+                grid-template-rows: repeat(3, 300px);
+        }
+
+        .grid-galery div img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+        }
+
+        /**NOSOTROS**/
+        .certificado {
+                flex-direction: column;
+        }
+
+        .certificado img {
+                width: auto;
+                height: auto;
+                padding: 50px;
+        }
+
+        .nst {
+                height: auto;
+        }
+
+        /**TURNOS**/
+        .turnos {
+                height: 200vh;
+        }
+
+        .formulario form {
+                height: 780px;
+        }
+
+        /**CONTACTO**/
+        .ctc {
+                height: 250vh;
+        }
+
+
+}
+
+@media screen and (max-width:1055px) {
+
+        /**INDEX**/
         p {
                 font-size: 12px;
         }
 
-        form {
-                width: 320px;
-                height: 500px;
-                padding: 10px;
-                margin: 10px;
+        /**SERVICIOS**/
+        .trabajos {
+                height: 380vh;
         }
 
-        .trabajos {
-                height: 340vh;
+        .hero h1 {
+                font-size: 40px;
         }
+
+        /**FORMULARIOS**/
+        form {
+                width: 320px;
+                height: 750px;
+        }
+
+
 }
 
 @media screen and (max-width:875px) {
+
+        /**INDEX**/
         header {
                 flex-direction: column;
                 align-items: center
         }
+        .init{height: 260vh;}
 
         .conteiner .bora {
                 display: none;
@@ -347,29 +446,17 @@ justify-content: center;}
         .conteiner .lx {
                 display: none;
         }
+        .boton1{font-size: 15px;}
 
-        ul {
-                align-items: center;
-                height: auto;
-                width: auto;
-        }
+        .boton2{font-size: 15px;}
 
-        .galeria {
-                display: grid;
-                grid-template-columns: repeat(2, 200px);
-                grid-template-rows: repeat(6, 200px);
-        }
-
-        h1 {
+        section h2 {
                 font-size: 30px;
         }
 
-        h2 {
-                font-size: 15px;
-        }
-
-        .contacto {
-                font-size: 18px;
+        .reseñas img {
+                width: 200px;
+                height: 250px;
         }
 
         .copy {
@@ -384,29 +471,93 @@ justify-content: center;}
         .maps-logo img {
                 height: 120px;
         }
-        .reserva{font-size: 15px;}
+
+        /**SERVICIOS**/
+
+        .grid-galery {
+                display: grid;
+                grid-template-columns: repeat(2, 250px);
+                grid-template-rows: repeat(3, 250px);
+        }
+
+        .trabajos {
+                height: 300vh;
+        }
+
+        h1 {
+                font-size: 30px;
+        }
+
+        h2 {
+                font-size: 15px;
+        }
+
+        .carousel img {
+                height: 500px;
+        }
+
+        /**TURNOS Y CONTACTOS**/
+        .contacto {
+                font-size: 18px;
+        }
+
+
+        .reserva {
+                font-size: 15px;
+        }
 }
 
 @media screen and (max-width:769px) {
+        .hero h1 {
+                font-size: 30px;
+        }
+
         .d-none {
                 display: block !important;
         }
-}
 
-@media screen and (max-width:581px) {
-        ul li {
-                padding: 8px;
-                font-size: 10px;
+}
+@media screen and (max-width:650px){
+        .boton1{font-size: 12px;}
+
+        .boton2{font-size: 12px;}
+
+        section h2 {
+                font-size: 25px;
         }
 
-        ul {
-                padding: 7px;
+        .reseñas img {
+                width: 150px;
+                height: 220px;
+        }
+}
+@media screen and (max-width:581px) {
+
+        /**INDEX**/
+        .parrafo h1 {
+                font-size: 28px;
         }
 
         p {
-                font-size: 9px;
+                font-size: 10px;
         }
 
+        .maps-logo iframe {
+                width: 170px;
+                height: 150px;
+        }
+
+        .maps-logo img {
+                height: 100px;
+        }
+
+        /**SERVICIOS**/
+        .hero h1 {
+                font-size: 25px;
+        }
+
+
+        /**NOSOTROS**/
         .certificado {
                 padding: 10px;
         }
@@ -419,61 +570,52 @@ justify-content: center;}
                 font-size: 18px;
         }
 
+        /**FORMULARIOS**/
         form {
-                width: 280px;
-                height: 470px;
+                width: 250px;
+                height: 600px;
 
         }
 
         label {
-                font-size: 12px;
+                font-size: 11px;
         }
+
         input {
-        
-        padding: 7px;
-}
-
-
-        .maps-logo iframe {
-                width: 170px;
-                height: 150px;
+                padding: 5px;
         }
 
-        .maps-logo img {
-                height: 100px;
+        .ctc {
+                height: 250vh;
         }
 
-        .init {
-                height: 130vh;
-        }
+
 
         .trabajos {
-                height: 330vh;
+                height: 300vh;
         }
-        .reserva{font-size: 11px;}
+
+        .reserva {
+                font-size: 10px;
+        }
+
 }
 
 @media screen and (max-width: 465px) {
 
-        .galeria {
-                display: grid;
-                grid-template-columns: repeat(2, 150px);
-                grid-template-rows: repeat(6, 150px);
-        }
-
-        .galeria :hover {
-                width: 220px;
-                height: 220px;
-        }
-
-        h2 {
-                font-size: 15px;
-        }
-
+        /**INDEX**/
         .copy {
                 font-size: 5px;
         }
+        .boton1{font-size: 10px;}
 
+        .boton2{font-size: 10px;}
+
+        section h2 {
+                font-size: 18px;
+        }
+        .reseñas img{width: 115px;
+                height: 180px;}
         .maps-logo iframe {
                 width: 150px;
                 height: 130px;
@@ -483,11 +625,28 @@ justify-content: center;}
                 height: 80px;
         }
 
-        .init {
-                height: 130vh;
+        /**SERVICIOS**/
+        .grid-galery {
+                display: grid;
+                grid-template-columns: repeat(2, 150px);
+                grid-template-rows: repeat(3, 150px);
+        }
+
+        .grid-galery :hover {
+                width: 220px;
+                height: 220px;
+        }
+
+        h2 {
+                font-size: 15px;
         }
 
         .trabajos {
                 height: 300vh;
         }
+
+
+
+
+
 }

@@ -1,0 +1,39 @@
+header {
+    background-color: $color-principal;
+}
+
+.logo {
+    width: 110px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 5px;
+}
+
+.container-fluid {
+
+    ul {
+        @include flex(flex, flex-start, end);
+
+        li {
+            a {
+                &:hover {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+
+}
+
+
+footer {
+    background-color: $color-cuarto;
+    padding: 15px;
+    @include flex(flex, space-between, center);
+
+
+    .copy {
+        font-size: nth($font-size, 2);
+        color: $color-secundario;
+    }
+}

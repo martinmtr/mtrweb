@@ -1,0 +1,84 @@
+    /**Turnos y contactos**/
+    .politica {
+        color: $color-secundario;
+        font-size: nth($font-size , 6);
+        text-align: center;
+    }
+
+    .turnos {
+        background-image: url(../img/repe.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        height: 170vh;
+    }
+
+    .reserva {
+        list-style: circle $color-secundario;
+        text-align: center;
+        background-color: $color-terciario;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-style: italic;
+    }
+
+    .ctc {
+        background-image: url(../img/repe.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 200vh;
+    }
+
+    form {
+        @include flex(flex,flex-start,stretch);
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        background: $color-cuarto;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 10px 10px 5px 0px rgba(34, 34, 34, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(39, 38, 38, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(27, 27, 27, 0.75);
+    }
+
+    label {
+        position: relative;
+        color: $color-secundario;
+    }
+
+    input {
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+    }
+
+
+
+
+    .contacto {
+        h1 {
+            font-size: nth($font-size , 7);
+            color: $color-secundario;
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+
+    .ubi {
+        @include flex(flex,center,stretch);
+        padding-top: 30px;
+    }
+
+
+
+
+    .formulario {
+        @include flex(flex,center,stretch);
+       
+    }

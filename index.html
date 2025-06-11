@@ -1,67 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./css/style.css">
+    <!--ANIMATE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-    
-    <title>MTR Premium Detail</title>       <!--TITULO VISIBLE DE PESTAÑA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+
+    <title>MTR Premium Detail</title> <!--TITULO VISIBLE DE PESTAÑA-->
 </head>
 
-<body> 
-     <header>
-          <img class="logo" src="./img/logo..jpg" alt="" >
-              <nav>                                   <!--NAVEGADOR-->
-                  <ul>
-                      <li><a href="index.html">Inicio</a></li>
-                      <li><a href="./pages/servicios.html">Servicios</a></li>
-                      <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                      <li><a href="./pages/turnos.html">Turnos</a></li>
-                      <li><a href="./pages/contacto.html">Contacto</a></li>
-                 </ul>
-             </nav>
-     </header>
-<main class="init"> 
-                                                <!--CONTENEDOR PRINCIPAL-->
-            <section class="conteiner">
-                <img src="./img/fastback.jpg" alt="" height="500">
-                <img class="bora" src="./img/bora.jpg" alt=""height="500">
-                <img src="./img/limp1.jpg" alt=""height="500">
-                <img src="./img/limp3.jpg" alt=""height="500">
-                <img src="./img/modena.jfif" alt=""height="500">
-                <img src="./img/sling.jfif" alt=""height="500">
-                <img  class="lx" src="./img/ppf.lexus.jfif" alt=""height="500">
-            </section>
-         <div class="parrafo">
-            <p>Desde 2015 nos dedicamos a la personalización y estética de vehículos, embarcaciones y aeronaves.
-            Entre nuestros servicios podes encontrar tratamientos acrílicos, cerámicos vidrio líquido, abrillantados, limpieza de tapizados e interiores completos.
-            Ploteos, protección PPF, polarizados nanoceramico, nanocarbon y antivandalicos.
-            Contamos con capacitación y certificación por VONIXX (Brasil) y SONAX (Alemania).</p>
-         </div>
-                                                <!--UBICACIÓN Y MARCAS-->
-         <div class="maps-logo">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.5677969510111!2d-58.605689190705206!3d-34.55506165292398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbbed4a1ece0d%3A0x4fad4b55121a74c0!2sMTR%20Premium%20Detail!5e0!3m2!1ses-419!2sar!4v1748043575818!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <img src="./img/logo..jpg" alt="" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/turnos.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="init">
+        <!--CONTENEDOR PRINCIPAL-->
+        <section class="parrafo">
+            <h1 class="animate__animated animate__bounceInDown">Bienvenidos a MTR </h1>
+            <p> Entre nuestros servicios podes encontrar tratamientos acrílicos, cerámicos vidrio líquido,
+                abrillantados, limpieza de tapizados e interiores, ploteos, protección PPF, polarizados nanoceramico,
+                nanocarbon y antivandalicos.
+            </p>
+
+        </section>
+        <section class="conteiner">
+            <img src="./img/fastback.jpg" alt="" height="500">
+            <img class="bora" src="./img/bora.jpg" alt="" height="500">
+            <img src="./img/limp1.jpg" alt="" height="500">
+            <img src="./img/modena.jfif" alt="" height="500">
+            <img src="./img/sling.jfif" alt="" height="500">
+            <img class="lx" src="./img/ppf.lexus.jfif" alt="" height="500">
+        </section>
+        <!--BOTON-->
+        <section class="boton">
+            <a class="boton1" href="./pages/servicios.html">Conocé nuestros trabajos</a>
+            <a class="boton2" href="./pages/turnos.html">Reservá tu turno</a>
+        </section>
+        <!--RESEÑAS-->
+        <section>
+            <h2>RESEÑAS</h2>
+            <div class="reseñas">
+                <div><img src="./img/reseña1 (1).jpeg" alt=""></div>
+                <div><img src="./img/reseña2.jpeg" alt=""></div>
+                <div><img src="./img/reseña3.jpeg" alt=""></div>
+            </div>
+
+        </section>
+        <!--UBICACIÓN Y MARCAS-->
+        <section class="maps-logo">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.5677969510111!2d-58.605689190705206!3d-34.55506165292398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbbed4a1ece0d%3A0x4fad4b55121a74c0!2sMTR%20Premium%20Detail!5e0!3m2!1ses-419!2sar!4v1748043575818!5m2!1ses-419!2sar"
+                width="400" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <img src="./img/VONIXX-LOGO.webp" alt="" height="140px">
             <img src="./img/sonax.png" alt="" height="140px">
-        </div>
-    
-</main>
-    <footer>                                     <!--PIE DE PAGINA-->
-        <h2 class="copy">&copy; 2025 MTR Premium Detail. Todos los derechos reservados.</h2>               
-           <div class="redes"> <a href="https://wa.me/message/V4VPYFXANXGID1"> 
-                <img src="./img/whatsapp.png" alt="" width ="30px"></a>
+        </section>
+
+    </main>
+    <footer> <!--PIE DE PAGINA-->
+        <h2 class="copy">&copy; 2025 MTR Premium Detail. Todos los derechos reservados.</h2>
+        <div class="redes"> <a href="https://wa.me/message/V4VPYFXANXGID1">
+                <img src="./img/whatsapp.png" alt="" width="30px"></a>
             <a href="https://www.instagram.com/mtr.premiumdetail/">
-                <img src="./img/logotipo-de-instagram.png" alt=""height= "30px"  ></a>
+                <img src="./img/logotipo-de-instagram.png" alt="" height="30px"></a>
             <a href="https://www.facebook.com/mtr.premiumdetail/">
-                <img src="./img/facebook.png" alt="" height="30px" ></a></div>
+                <img src="./img/facebook.png" alt="" height="30px"></a>
+        </div>
     </footer>
-    
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
