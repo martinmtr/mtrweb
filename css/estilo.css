@@ -47,7 +47,7 @@ footer .copy {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 280vh;
+  height: 300vh;
 }
 .init .parrafo {
   padding-top: 50px;
@@ -356,7 +356,7 @@ input {
 @media screen and (max-width: 1200px) {
   /**INDEX**/
   .init {
-    height: 320vh;
+    height: 380vh;
   }
   .init .conteiner {
     width: auto;
